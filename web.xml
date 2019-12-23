@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE web-app PUBLIC
+"-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+
+
+
+
+
+<web-app>
+
+
+
+
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+  	<servlet-name>getData</servlet-name>
+  	<display-name>getData</display-name>
+  	<description></description>
+  	<servlet-class>com.practice.getData</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>pagination</servlet-name>
+  	<display-name>pagination</display-name>
+  	<description></description>
+  	<servlet-class>com.practice.PaginationControllerServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EnterData</servlet-name>
+  	<display-name>EnterData</display-name>
+  	<description></description>
+  	<servlet-class>com.second_practice.EnterData</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>getData</servlet-name>
+  	<url-pattern>/save</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>EnterData</servlet-name>
+  	<url-pattern>/enter</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>pagination</servlet-name>
+  	<url-pattern>/PaginationControllServlet?page=1</url-pattern>
+  </servlet-mapping>
+  
+  
+
+  
+  
+</web-app>
+ 
